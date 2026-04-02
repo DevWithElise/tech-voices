@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap");
 
 :root {
   --title-font: "Delius Swash Caps", cursive;
@@ -17,7 +17,6 @@
   --gray-color: #344054;
   --accent-color: #b59fea;
   --light-accent-color: #ded4f7;
-  --close-color: #a41922;
 
   --margin: 48px;
   --padding: 24px;
@@ -29,17 +28,15 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--dark-color);
   color: var(--light-color);
   font-family: var(--paragraph-font);
 }
 
-/* ===== Header ===== */
+html {
+  scroll-behavior: smooth;
+}
 
 .header {
   position: fixed;
@@ -49,22 +46,20 @@ body {
   display: flex;
   justify-content: center;
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
   z-index: 1000;
 }
 
 .navbar {
   width: 90%;
   max-width: 1100px;
-  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--gray-color);
   border: 2px solid var(--light-gray-color);
   border-radius: 999px;
-  padding: 20px 40px;
-  flex-wrap: wrap;
+  padding: 15px 30px;
+  position: relative;
 }
 
 .nav-left {
@@ -78,36 +73,27 @@ body {
   background-color: var(--accent-color);
   padding: 6px;
   border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .logo-icon img {
   width: 32px;
-  height: 32px;
-  max-width: 100%;
-  height: auto;
 }
 
 .nav-left h2 {
   color: var(--accent-color);
   font-family: var(--title-font);
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 22px;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .nav-links a {
   color: var(--light-color);
   text-decoration: none;
-  font-size: 18px;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -119,37 +105,19 @@ body {
 #subscribe-btn {
   background-color: var(--light-accent-color);
   color: var(--gray-color);
-  border: 2px solid var(--light-gray-color);
-  padding: 8px 16px;
-  border-radius: 12px;
-  font-weight: 500;
-  transition: 0.3;
-  transform: scale(1);
-  animation: shake 1s infinite;
+  padding: 8px 14px;
+  border-radius: 10px;
 }
 
-@keyframes shake {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(3deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-3deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+#burger-toggle {
+  display: none;
 }
 
-#subscribe-btn:hover {
-  color: var(--light-color);
-  background-color: var(--accent-color);
-  transition: 0.5s;
+.burger {
+  display: none;
+  color: var(--accent-color);
+  font-size: 28px;
+  cursor: pointer;
 }
 
 /*Main*/

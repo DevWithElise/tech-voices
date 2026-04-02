@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <title>Tech Voices - Podcast</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
   </head>
 
   <body>
@@ -13,11 +14,16 @@
       <div class="navbar">
         <a href="../index.html" class="nav-left">
           <div class="logo-icon">
-          <img src="../images/logo-micro-flaticon.png" 
-          alt="Logo représentant un micro - Flaticon"/>
+            <img
+              src="../images/logo-micro-flaticon.png"
+              alt="Logo représentant un micro - Flaticon"
+            />
           </div>
           <h2>Tech Voices</h2>
         </a>
+
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger">☰</label>
 
         <nav class="nav-links">
           <a href="../index.html">Accueil</a>
@@ -30,275 +36,278 @@
     </header>
 
     <main class="main-about">
-    <!--Section 1-->
-    <section class="hero-section">
-      <section>
-        <div class="tag-container center">
-          <span class="section-tag">Notre histoire</span>
-        </div>
-        <div class="hero-autres-pages">
-          <h2 class="title">À propos de Tech Voices</h2>
-          <h3 class="title">
-            Découvrez la personne et la mission derrière votre podcast préféré
-          </h3>
-        </div>
+      <!--Section 1-->
+      <section class="hero-section">
+        <section>
+          <div class="tag-container center">
+            <span class="section-tag">Notre histoire</span>
+          </div>
+          <div class="hero-autres-pages">
+            <h2 class="title">À propos de Tech Voices</h2>
+            <h3 class="title">
+              Découvrez la personne et la mission derrière votre podcast préféré
+            </h3>
+          </div>
+        </section>
+
+        <section class="hero">
+          <div class="hero-image">
+            <img
+              src="../images/page-2-a-propos/studio-podcast-dc-studio-freepik.jpg"
+              alt="Photo représentant le studio d'enregistrement de podcast de Jessica avec un 
+            micro au premier plan - Image de DC Studio sur Freepik"
+              width="700px"
+              height="500px"
+              class="image"
+            />
+          </div>
+          <div class="hero-content">
+            <div class="tag-container left">
+              <span class="section-tag">Notre parcours</span>
+            </div>
+            <h2 class="title">L'histoire de Tech Voices</h2>
+            <p>
+              Jessica a créé Tech Voices pour partager son expérience et
+              apprentissages dans un univers souvent masculin. Elle voulait
+              raconter la réalité dans la tech, ses réussites comme ses doutes,
+              et inspirer celles et ceux qui hésitent encore à se lancer.
+              <br /><br />
+              Chaque épisode est pensé pour transmettre savoir, conseils et
+              histoires vraies, avec l'idée que comprendre la tech, c'est
+              commencer à y appartenir.
+            </p>
+            <article class="avis-personne">
+              <img
+                src="../images/page-2-a-propos/jessica-freepik.png"
+                alt="Photo circulaire représentant Jessica - Image de Freepik"
+                width="75px"
+                height="75px"
+              />
+              <div>
+                <h4>Jessica Morel</h4>
+                <h4 class="job">Formatrice, conférencière et podcasteuse</h4>
+              </div>
+            </article>
+          </div>
+        </section>
       </section>
 
-      <section class="hero">
-        <div class="hero-image">
-          <img
-            src="../images/page-2-a-propos/studio-podcast-dc-studio-freepik.jpg"
-            alt="Photo représentant le studio d'enregistrement de podcast de Jessica avec un 
-            micro au premier plan - Image de DC Studio sur Freepik"
-            width="700px"
-            height="500px"
-            class="image"
-          />
-        </div>
-        <div class="hero-content">
-          <div class="tag-container left">
-            <span class="section-tag">Notre parcours</span>
-          </div>
-          <h2 class="title">L'histoire de Tech Voices</h2>
-          <p>
-            Jessica a créé Tech Voices pour partager son expérience et
-            apprentissages dans un univers souvent masculin. Elle voulait
-            raconter la réalité dans la tech, ses réussites comme ses doutes, et
-            inspirer celles et ceux qui hésitent encore à se lancer.
-            <br /><br />
-            Chaque épisode est pensé pour transmettre savoir, conseils et
-            histoires vraies, avec l'idée que comprendre la tech, c'est
-            commencer à y appartenir.
-          </p>
-          <article class="avis-personne">
-            <img
-              src="../images/page-2-a-propos/jessica-freepik.png"
-              alt="Photo circulaire représentant Jessica - Image de Freepik"
-              width="75px"
-              height="75px"
-            />
+      <!--Section 2-->
+      <section>
+        <div class="card-container card-value">
+          <article class="card">
+            <img src="https://placehold.co/75" alt="" />
+            <h3 class="title">Notre mission</h3>
+            <hr />
             <div>
-              <h4>Jessica Morel</h4>
-              <h4 class="job">Formatrice, conférencière et podcasteuse</h4>
+              <div class="avis-personne">
+                <span class="check">&#10004;</span>
+                <p>Transmettre le savoir</p>
+              </div>
+              <div class="avis-personne">
+                <span class="check">&#10004;</span>
+                <p>Inspirer le courage</p>
+              </div>
+              <div class="avis-personne">
+                <span class="check">&#10004;</span>
+                <p>Partager des parcours</p>
+              </div>
+              <div class="avis-personne">
+                <span class="check">&#10004;</span>
+                <p>Accompagner les débutants</p>
+              </div>
+              <div class="avis-personne">
+                <span class="check">&#10004;</span>
+                <p>Donner la parole aux femmes</p>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://placehold.co/75" alt="" />
+            <h3 class="title">Notre vision</h3>
+            <hr />
+            <div>
+              <div class="avis-personne">
+                <span class="check">&#10004;</span>
+                <p>Rendre la tech accessible à tous</p>
+              </div>
+              <div class="avis-personne">
+                <span class="check">&#10004;</span>
+                <p>Changer les mentalités</p>
+              </div>
+              <div class="avis-personne">
+                <span class="check">&#10004;</span>
+                <p>Encourager les femmes à oser</p>
+              </div>
+              <div class="avis-personne">
+                <span class="check">&#10004;</span>
+                <p>Construire une communauté inclusive</p>
+              </div>
+              <div class="avis-personne">
+                <span class="check">&#10004;</span>
+                <p>Faire de la curiosité une force</p>
+              </div>
             </div>
           </article>
         </div>
       </section>
-    </section>
 
-    <!--Section 2-->
-    <section>
-      <div class="card-container card-value">
-        <article class="card">
-          <img src="https://placehold.co/75" alt="" />
-          <h3 class="title">Notre mission</h3>
-          <hr />
-          <div>
-            <div class="avis-personne">
-              <span class="check">&#10004</span>
-              <p>Transmettre le savoir</p>
-            </div>
-            <div class="avis-personne">
-              <span class="check">&#10004</span>
-              <p>Inspirer le courage</p>
-            </div>
-            <div class="avis-personne">
-              <span class="check">&#10004</span>
-              <p>Partager des parcours</p>
-            </div>
-            <div class="avis-personne">
-              <span class="check">&#10004</span>
-              <p>Accompagner les débutants</p>
-            </div>
-            <div class="avis-personne">
-              <span class="check">&#10004</span>
-              <p>Donner la parole aux femmes</p>
-            </div>
-          </div>
-        </article>
-        <article class="card">
-          <img src="https://placehold.co/75" alt="" />
-          <h3 class="title">Notre vision</h3>
-          <hr />
-          <div>
-            <div class="avis-personne">
-              <span class="check">&#10004</span>
-              <p>Rendre la tech accessible à tous</p>
-            </div>
-            <div class="avis-personne">
-              <span class="check">&#10004</span>
-              <p>Changer les mentalités</p>
-            </div>
-            <div class="avis-personne">
-              <span class="check">&#10004</span>
-              <p>Encourager les femmes à oser</p>
-            </div>
-            <div class="avis-personne">
-              <span class="check">&#10004</span>
-              <p>Construire une communauté inclusive</p>
-            </div>
-            <div class="avis-personne">
-              <span class="check">&#10004</span>
-              <p>Faire de la curiosité une force</p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
+      <!--Section 3-->
+      <section class="section">
+        <div class="tag-container center">
+          <span class="section-tag">Ce que nous défendons</span>
+        </div>
+        <div class="hero-autres-pages">
+          <h2 class="title">Nos valeurs fondamentales</h2>
+          <h3 class="title">Les principes qui guident tout ce que l'on fait</h3>
+        </div>
+        <div class="card-container">
+          <article class="card valeurs-card">
+            <img src="https://placehold.co/75" alt="" />
+            <h3 class="title">Curiosité</h3>
+            <p>
+              Chez Tech Voices, la curiosité est au cœur de tout. Chaque épisode
+              invite à explorer, à poser des questions et à découvrir des
+              parcours variés dans la tech. Comprendre, apprendre et tester sont
+              les premiers pas pour trouver sa place et avancer, quel que soit
+              son niveau ou son expérience.
+            </p>
+          </article>
+          <article class="card valeurs-card">
+            <img src="https://placehold.co/75" alt="" />
+            <h3 class="title">Inclusion</h3>
+            <p>
+              La tech doit être accessible à tous, sans distinction de genre, de
+              parcours ou de niveau. Tech Voices valorise la diversité et donne
+              la parole à celles et ceux qui sont souvent sous-représentés.
+              L'inclusion permet de créer des communautés riches et solidaires,
+              où chacun peut progresser à son rythme.
+            </p>
+          </article>
+          <article class="card valeurs-card">
+            <img src="https://placehold.co/75" alt="" />
+            <h3 class="title">Persévérance</h3>
+            <p>
+              Se lancer dans la tech peut sembler intimidant, mais la
+              persévérance est essentielle. Tech Voices montre que les erreurs,
+              les doutes et les obstacles font partie du chemin. Chaque épisode
+              est un rappel qu'avancer, continuer à apprendre et se relever
+              après un échec sont les clés pour réussir.
+            </p>
+          </article>
+          <article class="card valeurs-card">
+            <img src="https://placehold.co/75" alt="" />
+            <h3 class="title">Inspiration</h3>
+            <p>
+              Tech Voices ne se contente pas de transmettre des connaissances :
+              elle inspire. À travers des histoires vraies, des conseils et des
+              témoignages, le podcast encourage chacun à croire en ses
+              capacités, à oser se lancer et à imaginer son propre parcours dans
+              le numérique, sans peur ni limite.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <!--Section 3-->
-    <section class="section">
-      <div class="tag-container center">
-        <span class="section-tag">Ce que nous défendons</span>
-      </div>
-      <div class="hero-autres-pages">
-        <h2 class="title">Nos valeurs fondamentales</h2>
-        <h3 class="title">Les principes qui guident tout ce que l'on fait</h3>
-      </div>
-      <div class="card-container">
-        <article class="card valeurs-card">
-          <img src="https://placehold.co/75" alt="" />
-          <h3 class="title">Curiosité</h3>
-          <p>
-            Chez Tech Voices, la curiosité est au cœur de tout. Chaque épisode invite à explorer,
-            à poser des questions et à découvrir des parcours variés dans la tech. Comprendre, 
-            apprendre et tester sont les premiers pas pour trouver sa place et avancer, quel que soit 
-            son niveau ou son expérience.
-          </p>
-        </article>
-        <article class="card valeurs-card">
-          <img src="https://placehold.co/75" alt="" />
-          <h3 class="title">Inclusion</h3>
-          <p>
-            La tech doit être accessible à tous, sans distinction de genre, de parcours ou de niveau. 
-            Tech Voices valorise la diversité et donne la parole à celles et ceux qui sont souvent 
-            sous-représentés. L'inclusion permet de créer des communautés riches et solidaires, où 
-            chacun peut progresser à son rythme.
-          </p>
-        </article>
-        <article class="card valeurs-card">
-          <img src="https://placehold.co/75" alt="" />
-          <h3 class="title">Persévérance</h3>
-          <p>
-            Se lancer dans la tech peut sembler intimidant, mais la persévérance est essentielle. Tech 
-            Voices montre que les erreurs, les doutes et les obstacles font partie du chemin. Chaque 
-            épisode est un rappel qu'avancer, continuer à apprendre et se relever après un échec sont les 
-            clés pour réussir.
-          </p>
-        </article>
-        <article class="card valeurs-card">
-          <img src="https://placehold.co/75" alt="" />
-          <h3 class="title">Inspiration</h3>
-          <p>
-            Tech Voices ne se contente pas de transmettre des connaissances : elle inspire. À travers des 
-            histoires vraies, des conseils et des témoignages, le podcast encourage chacun à croire en ses 
-            capacités, à oser se lancer et à imaginer son propre parcours dans le numérique, sans peur ni 
-            limite.
-          </p>
-        </article>
-      </div>
-    </section>
+      <!--Section 4-->
+      <section>
+        <div class="tag-container center">
+          <span class="section-tag">Découvrir l'équipe</span>
+        </div>
+      </section>
 
-    <!--Section 4-->
-    <section>
-      <div class="tag-container center">
-        <span class="section-tag">Découvrir l'équipe</span>
-      </div>
-    </section>
-
-    <section class="hero">
-      <div class="hero-content">
-        <h2 class="title">Qui est Jessica Morel ?</h2>
-        <p>
-          Jessica n'a pas toujours été sûre de sa place dans la tech. Ancienne
-          développeuse, puis Tech Lead, elle a navigué pendant plusieurs années
-          dans un secteur exigeant, souvent dominé par les hommes. Elle a appris
-          à se faire entendre, à affirmer ses compétences et à transformer ses
-          doutes en moteur de progression. <br /><br />
-          Forte de cette expérience, elle a choisi de devenir formatrice et
-          mentore. Elle accompagne désormais des débutants et débutantes dans
-          leurs premiers pas dans le numérique, en partageant non seulement des
-          connaissances techniques, mais aussi des histoires de parcours, des
-          conseils pratiques et des stratégies pour surmonter le syndrome de
-          l'imposteur. <br /><br />
-          Jessica est exigeante, curieuse et passionnée. Elle aime comprendre en
-          profondeur, créer, expérimenter et transmettre. Son parcours illustre
-          qu'il n'est pas nécessaire de tout savoir pour commencer : c'est la
-          persévérance, la curiosité et la volonté de progresser qui font la
-          différence. <br /><br />
-          À travers Tech Voices, elle souhaite inspirer, motiver et montrer que
-          la tech est un univers accessible à tous, hommes comme femmes,
-          débutants comme experts. Son ambition : que chaque épisode soit un
-          petit pas pour aider d'autres personnes à trouver leur place et à
-          avancer avec confiance.
-        </p>
-      </div>
-      <div class="hero-image">
-        <img
-          src="../images/page-2-a-propos/jessica-presentation-freepik.png"
-          alt="Photo carrée représentant Jessica - Image de Freepik"
-          width="600px"
-          height="600px"
-          class="image"
-        />
-      </div>
-    </section>
+      <section class="hero">
+        <div class="hero-content">
+          <h2 class="title">Qui est Jessica Morel ?</h2>
+          <p>
+            Jessica n'a pas toujours été sûre de sa place dans la tech. Ancienne
+            développeuse, puis Tech Lead, elle a navigué pendant plusieurs
+            années dans un secteur exigeant, souvent dominé par les hommes. Elle
+            a appris à se faire entendre, à affirmer ses compétences et à
+            transformer ses doutes en moteur de progression. <br /><br />
+            Forte de cette expérience, elle a choisi de devenir formatrice et
+            mentore. Elle accompagne désormais des débutants et débutantes dans
+            leurs premiers pas dans le numérique, en partageant non seulement
+            des connaissances techniques, mais aussi des histoires de parcours,
+            des conseils pratiques et des stratégies pour surmonter le syndrome
+            de l'imposteur. <br /><br />
+            Jessica est exigeante, curieuse et passionnée. Elle aime comprendre
+            en profondeur, créer, expérimenter et transmettre. Son parcours
+            illustre qu'il n'est pas nécessaire de tout savoir pour commencer :
+            c'est la persévérance, la curiosité et la volonté de progresser qui
+            font la différence. <br /><br />
+            À travers Tech Voices, elle souhaite inspirer, motiver et montrer
+            que la tech est un univers accessible à tous, hommes comme femmes,
+            débutants comme experts. Son ambition : que chaque épisode soit un
+            petit pas pour aider d'autres personnes à trouver leur place et à
+            avancer avec confiance.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img
+            src="../images/page-2-a-propos/jessica-presentation-freepik.png"
+            alt="Photo carrée représentant Jessica - Image de Freepik"
+            width="600px"
+            height="600px"
+            class="image"
+          />
+        </div>
+      </section>
     </main>
 
     <!--Footer-->
     <footer class="footer">
       <div class="footer-container">
-        
         <div class="footer-col">
           <a href="../index.html" class="nav-left">
             <div class="logo-icon">
-              <img
-                src="../images/logo-micro-flaticon.png"
-                alt="Logo micro"
-              />
+              <img src="../images/logo-micro-flaticon.png" alt="Logo micro" />
             </div>
             <h2>Tech Voices</h2>
           </a>
 
           <p class="footer-description">
-            <em>Tech Voices</em> est un podcast qui rend la tech accessible
-            à toutes et tous à travers parcours, interviews et 
-            contenus pédagogiques.
+            <em>Tech Voices</em> est un podcast qui rend la tech accessible à
+            toutes et tous à travers parcours, interviews et contenus
+            pédagogiques.
           </p>
 
           <div class="socials">
-            <a href="https://www.instagram.com" 
-            target="_blank"
-            title="Instagram">
-              <img src="../images/icons/fa7-brands--instagram.svg" 
-              alt="Logo de Instagram" 
-              width="16px"
-              height="16px"/></a>
-            <a href="https://fr.linkedin.com/" 
-            target="_blank"
-            title="LinkedIn">
-              <img src="../images/icons/fa7-brands--square-linkedin.svg" 
-              alt="Logo de LinkedIn - Flaticon"
-              width="16px"
-              height="16px" /></a>
-            <a href="https://www.youtube.com/" 
-            target="_blank"
-            title="YouTube">
-              <img src="../images/icons/fa7-brands--youtube.svg" 
-              alt="Logo de YouTube - Flaticon" 
-              width="16px"
-              height="16px"/></a>
-            <a href="https://www.twitch.tv/" 
-            target="_blank"
-            title="Twitch">
-              <img src="../images/icons/fa7-brands--twitch.svg" 
-              alt="Logo de Twitch - Flaticon"
-              height="16px" 
-              width="16px"/></a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              title="Instagram"
+            >
+              <img
+                src="../images/icons/fa7-brands--instagram.svg"
+                alt="Logo de Instagram"
+                width="16px"
+                height="16px"
+            /></a>
+            <a href="https://fr.linkedin.com/" target="_blank" title="LinkedIn">
+              <img
+                src="../images/icons/fa7-brands--square-linkedin.svg"
+                alt="Logo de LinkedIn - Flaticon"
+                width="16px"
+                height="16px"
+            /></a>
+            <a href="https://www.youtube.com/" target="_blank" title="YouTube">
+              <img
+                src="../images/icons/fa7-brands--youtube.svg"
+                alt="Logo de YouTube - Flaticon"
+                width="16px"
+                height="16px"
+            /></a>
+            <a href="https://www.twitch.tv/" target="_blank" title="Twitch">
+              <img
+                src="../images/icons/fa7-brands--twitch.svg"
+                alt="Logo de Twitch - Flaticon"
+                height="16px"
+                width="16px"
+            /></a>
           </div>
         </div>
 
-        
         <div class="footer-col">
           <h3>Navigation</h3>
           <nav class="nav-links footer-col">
@@ -314,24 +323,30 @@
 
           <div class="contact-item">
             <div class="icon-circle">
-              <img src="../images/icons/flowbite--envelope-outline.svg" 
-              alt="Icône d'une enveloppe - Flaticon" />
+              <img
+                src="../images/icons/flowbite--envelope-outline.svg"
+                alt="Icône d'une enveloppe - Flaticon"
+              />
             </div>
             <p>jessica@tech-voices.fr</p>
           </div>
 
           <div class="contact-item">
             <div class="icon-circle">
-              <img src="../images/icons/flowbite--phone-outline.svg" 
-              alt="Icône de téléphone - Flaticon" />
+              <img
+                src="../images/icons/flowbite--phone-outline.svg"
+                alt="Icône de téléphone - Flaticon"
+              />
             </div>
             <p>+33 1 23 45 67 89</p>
           </div>
 
           <div class="contact-item">
             <div class="icon-circle">
-              <img src="../images/icons/flowbite--map-pin-alt-outline.svg" 
-              alt="Icône d'une épingle - Flaticon" />
+              <img
+                src="../images/icons/flowbite--map-pin-alt-outline.svg"
+                alt="Icône d'une épingle - Flaticon"
+              />
             </div>
             <p>5 Parvis Alan Turing, Paris, France</p>
           </div>

@@ -25,6 +25,11 @@
     max-width: 50%;
 }
 
+.image {
+    width: 700px;
+    height: 700px;
+}
+
 .streaming-icon{
     margin: 24px 24px 24px 0;
 }
