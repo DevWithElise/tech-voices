@@ -51,3 +51,64 @@ a{
     display: inline-block;
     margin-top: 12px;
 }
+
+/* Responsive - Page des épisodes */
+
+@media only screen and (max-width: 425px) {
+
+  .main-episodes {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .episode-container {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .episode-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .episode-container article {
+    width: 100%;
+  }
+
+  .arrow {
+    align-self: flex-end;
+    font-size: 32px;
+  }
+
+  .episode-container a img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card,
+  .valeurs-card {
+    width: 100%;
+  }
+
+  .card img.illustration {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 { font-size: 32px; }
+  h2 { font-size: 28px; }
+  h3 { font-size: 24px; }
+  h4 { font-size: 20px; }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}

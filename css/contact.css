@@ -11,6 +11,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .facon-de-nous-contacter{
@@ -142,52 +143,80 @@ a{
     text-decoration: none;
 }
 
-/*Section Newsletter */
+/* Responsive - Page de Contact */
 
-.newsletter-section {
-    min-height: 70%;
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+@media (max-width: 425px) {
 
-    padding: var(--padding);
-}
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 18px; }
+  p { font-size: 14px; line-height: 22px; }
 
-.subscribe-newsletter, .streaming-podcast{
+  .main-contact {
+    margin: 120px 10px 60px 10px;
+  }
+
+  .reseaux {
+    width: 250px;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .container-reseaux {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 45%;
+    gap: 20px;
+  }
+
+  .facon-de-nous-contacter {
+    width: 260px;
+    padding: 16px;
     gap: 12px;
-}
+  }
 
-.input-container{
+  .facon-de-nous-contacter img {
+    width: 100px;
+    height: auto;
+  }
+
+  .container-formulaire {
+    gap: 20px;
+  }
+
+  input {
+    height: 28px;
+  }
+
+  textarea {
+    font-size: 14px;
+  }
+
+  .modal-content {
+    max-width: 90%;
+    padding: 16px;
+  }
+
+  .modal-img {
+    width: 180px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .modal-text {
+    font-size: 16px;
+  }
+
+  .phone-number {
+    font-size: 20px;
+  }
+
+  .container-formulaire {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 24px;
+    flex-direction: column;
+  }
+  
 }
-
-.icon{
-    margin-right: 12px;
-    margin-top: 12px;
-}
-
-.streaming-podcast{
-    border: 2px solid var(--light-accent-color);
-    padding: 24px;
-    border-radius: 12px;
-}
-
-.btn{
-    display: inline-block;
-    margin-top: 12px;
-}
-
-.streaming-icon{
-    margin: 24px 24px 24px 0;
-}
-
