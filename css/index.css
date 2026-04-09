@@ -95,6 +95,7 @@
     background-color: var(--gray-color);
     border: 2px solid var(--light-gray-color);
     border-radius: 12px;
+    box-shadow: 0 0 5px var(--light-accent-color);
 }
 
 /* Les avis */
@@ -163,6 +164,7 @@
     border: 2px solid var(--light-accent-color);
     padding: 24px;
     border-radius: 12px;
+    box-shadow: 0 0 10px var(--light-accent-color);
 }
 
 /* Responsive - Page d'accueil */

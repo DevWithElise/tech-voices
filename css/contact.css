@@ -21,6 +21,7 @@
     padding: var(--padding);
     width: 500px;
     border-radius: 12px;
+    box-shadow: 0 0 15px var(--light-gray-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,60 +30,42 @@
     margin: var(--margin);
 }
 
-/*Modal*/
-
-.modal{
+/* MODALE TELEPHONER */
+.modal-tel {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     display: none;
+
     background-color: var(--dark-color);
+
     justify-content: center;
     align-items: center;
+
+    z-index: 9999;
 }
 
-.modal:target{
+.modal-tel:target {
     display: flex;
 }
 
-.modal-content{
+.modal-tel-content {
+    position: relative;
     background-color: var(--accent-color);
-    padding: var(--padding);
+    padding: 40px;
     border-radius: 12px;
-    text-align: center;
+    width: 90%;
     max-width: 800px;
-    line-height: 48px;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    line-height: 1.6;
 }
 
-.modal-img{
-    width: 300px;
-    margin-bottom: 10px;
-}
-
-.modal-title{
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--dark-color);
-    margin: var(--margin);
-}
-
-.modal-text{
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--dark-color);
-}
-
-.phone-number{
-    font-size: 40px;
-    font-weight: bold;
-    color: var(--dark-color);
-    margin: 20px 0;
-}
-
-.close{
-    display: block;
+.btn-tel-close {
+    display: inline-block;
     font-size: 20px;
     line-height: 24px;
     color: var(--light-color);
@@ -90,14 +73,35 @@
     border-width: 2px;
 }
 
-.container-formulaire {
-    margin: var(--margin);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    line-height: 32px;
-    gap: 80px;
-    align-items: stretch;
+.btn-tel-close:hover {
+  color: var(--close-color);
+  background-color: var(--light-color);
+  transform: scale(1.2);
+}
+
+.modal-tel-img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.modal-tel-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin: 20px 0;
+}
+
+.modal-tel-text {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.modal-tel-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--dark-color);
+    margin: 20px 0;
 }
 
 .formulaire {
@@ -139,9 +143,35 @@ input{
     gap: 24px;
 }
 
+.reseaux:hover {
+  box-shadow: 0 0 25px var(--accent-color);
+}
+
 a{
     text-decoration: none;
 }
+
+/* Formulaire de contact */
+
+.close{
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--light-color);
+    background-color: var(--close-color);
+    border-width: 2px;
+}
+
+.container-formulaire {
+    margin: var(--margin);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 32px;
+    gap: 80px;
+    align-items: stretch;
+}
+
 
 /* Responsive - Page de Contact */
 
